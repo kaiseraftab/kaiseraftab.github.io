@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      Author: Md Kaiser Aftab
+      File: index.html
+      Purpose: Portfolio home page
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Md Kaiser Aftab — IT Portfolio</title>
+    <meta
+      name="description"
+      content="IT student portfolio — open to any IT-related internship (web, backend/API, mobile, QA)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">Md Kaiser Aftab</a>
+      <nav class="nav__links">
+        <a class="nav__link" href="projects.html">Projects</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero card" aria-labelledby="home-heading">
+        <div class="hero__text">
+          <span class="badge" aria-label="Open to internships"
+            >🟢 Open to IT Internships · Sep 2025</span
+          >
+          <h1 id="home-heading">IT Student · Full-Stack / Web / Mobile</h1>
+          <p>
+            I’m an IT student at NHL Stenden University (Emmen). I build
+            practical, user-friendly software across web, mobile, and backend.
+            I’m open to <strong>any IT-related internship</strong>—software,
+            web, backend/API, mobile, or QA.
+          </p>
+          <ul class="chips" aria-label="Key skills">
+            <li class="chip">C# / .NET / ASP.NET</li>
+            <li class="chip">Java / JavaFX</li>
+            <li class="chip">HTML / CSS / JS</li>
+            <li class="chip">REST APIs</li>
+            <li class="chip">SQLite / MySQL</li>
+            <li class="chip">Flutter / Android</li>
+            <li class="chip">Swift / iOS</li>
+          </ul>
+          <p class="links">
+            <a class="btn" href="docs/md-kaiser-aftab-cv.pdf" download
+              >Download CV</a
+            >
+            <a class="link" href="https://github.com/kaiseraftab" target="_blank"
+              >GitHub</a
+            >
+            <span aria-hidden="true">·</span>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/md-kaiser-aftab-a1766237a/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="hero__media">
+          <img
+            class="hero__photo"
+            src="img/photo.jpg"
+            alt="Portrait of Md Kaiser Aftab"
+          />
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="highlighted-projects">
+        <h2 id="highlighted-projects">Highlighted Projects</h2>
+        <div class="grid">
+          <article class="card card--project">
+            <h3>.NET MAUI Price Comparison App</h3>
+            <p>
+              Cross-platform app comparing supermarket prices via REST APIs.
+            </p>
+            <ul class="tech" aria-label="Technologies">
+              <li class="chip">C#</li>
+              <li class="chip">.NET MAUI</li>
+              <li class="chip">SQLite</li>
+            </ul>
+            <p>
+              <a
+                class="link"
+                href="https://github.com/Hasibahs/PriceCompare.NET"
+                target="_blank"
+                >GitHub →</a
+              >
+            </p>
+          </article>
+
+          <article class="card card--project">
+            <h3>JavaFX Food Ordering Application</h3>
+            <p>
+              Role-based desktop app using Factory, Observer & Command patterns.
+            </p>
+            <ul class="tech" aria-label="Technologies">
+              <li class="chip">Java</li>
+              <li class="chip">JavaFX</li>
+              <li class="chip">SQLite</li>
+            </ul>
+            <p>
+              <a
+                class="link"
+                href="https://github.com/Hasibahs/OnlineFoodOrder-DesignPatterns"
+                target="_blank"
+                >GitHub →</a
+              >
+            </p>
+          </article>
+
+          <article class="card card--project">
+            <h3>Personal Shopping Assistant (iOS)</h3>
+            <p>
+              Product search, Firebase Auth/Firestore, weekly deals, AR
+              prototype.
+            </p>
+            <ul class="tech" aria-label="Technologies">
+              <li class="chip">Swift</li>
+              <li class="chip">SwiftUI</li>
+              <li class="chip">Firebase</li>
+            </ul>
+            <p>
+              <a
+                class="link"
+                href="https://github.com/radoychev/Personal-Shoping-Assistant"
+                target="_blank"
+                >GitHub →</a
+              >
+            </p>
+          </article>
+        </div>
+        <p class="more">
+          <a class="link" href="projects.html">See all projects →</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      © <span id="year"></span> Md Kaiser Aftab — Built with HTML/CSS.
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
