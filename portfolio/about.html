@@ -1,50 +1,83 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Md Kaiser Aftab</title>
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-<body>
-  <header class="nav">
-    <a class="brand" href="index.html">Md Kaiser Aftab</a>
-    <nav>
-      <a href="projects.html">Projects</a>
-      <a class="active" href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <!-- Author: Md Kaiser Aftab | File: about.html -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Md Kaiser Aftab</title>
+    <meta name="description" content="About Md Kaiser Aftab — IT student open to any IT-related internship." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-  <main class="container">
-    <section class="section card">
-      <h1>About Me</h1>
-      <p>
-        I’m Md Kaiser Aftab, an IT student based in Emmen, Netherlands. I enjoy full-stack development — web, backend APIs,
-        and mobile. I learn by building. I’m currently open to <strong>any IT-related internship</strong> starting
-        September 2025 (on-site in NL or remote).
-      </p>
-      <h2>Education</h2>
-      <ul class="list">
-        <li><strong>BSc in Information Technology</strong> — NHL Stenden University, Emmen (Sep 2023 – Present)</li>
-        <li><strong>Diploma in Information Technology</strong> — UCSI University, Malaysia (2018 – 2020)</li>
-        <li><strong>IELTS</strong> (British Council, Malaysia) — Overall 6 (2020)</li>
-        <li><strong>O/GCSE</strong> — British Council, Bangladesh (Maths B, Pure Maths B, Accounting B, Bengali A)</li>
-      </ul>
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="chip">C#</span><span class="chip">.NET / ASP.NET</span>
-        <span class="chip">Java / JavaFX</span><span class="chip">HTML/CSS/JS</span>
-        <span class="chip">REST APIs</span><span class="chip">SQLite / MySQL</span>
-        <span class="chip">Flutter / Android</span><span class="chip">Swift / iOS</span>
-        <span class="chip">Git / GitHub</span>
-      </div>
-      <p class="muted">Nationality: Bangladeshi • Languages: English (Fluent), Dutch (Basic), Bengali (Native)</p>
-      <p><a class="btn" href="docs/MD_Kaiser_Aftab_CV.pdf" download>Download CV</a></p>
-    </section>
-  </main>
+    <header class="nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">Md Kaiser Aftab</a>
+      <nav class="nav__links">
+        <a class="nav__link" href="projects.html">Projects</a>
+        <a class="nav__link nav__link--active" aria-current="page" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <footer class="footer">© <span id="y"></span> Md Kaiser Aftab</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
+    <main id="main" class="container">
+      <section class="section card" aria-labelledby="about-heading">
+        <h1 id="about-heading">About Me</h1>
+
+        <div class="hero" style="grid-template-columns: .9fr 1.1fr;">
+          <div class="hero__media">
+            <img
+              class="hero__photo"
+              src="img/photo.jpg"
+              alt="Portrait of Md Kaiser Aftab"
+            />
+          </div>
+
+          <div class="hero__text">
+            <p>
+              I’m Md Kaiser Aftab, an IT student based in Emmen, Netherlands. I enjoy full-stack
+              development across web, backend APIs, and mobile. I learn by building and I’m open to
+              <strong>any IT-related internship</strong> starting September 2025 (on-site in NL or remote).
+            </p>
+
+            <h2>Education</h2>
+            <ul class="list" aria-label="Education history">
+              <li><strong>BSc in Information Technology</strong> — NHL Stenden University, Emmen (Sep 2023 – Present)</li>
+              <li><strong>Diploma in Information Technology</strong> — UCSI University, Malaysia (2018 – 2020)</li>
+              <li><strong>IELTS</strong> (British Council, Malaysia) — Overall 6 (2020)</li>
+              <li><strong>O/GCSE</strong> — British Council, Bangladesh (Maths B, Pure Maths B, Accounting B, Bengali A)</li>
+            </ul>
+
+            <h2>Skills</h2>
+            <ul class="chips" aria-label="Technical skills">
+              <li class="chip">C#</li><li class="chip">.NET / ASP.NET</li>
+              <li class="chip">Java / JavaFX</li><li class="chip">HTML/CSS/JS</li>
+              <li class="chip">REST APIs</li><li class="chip">SQLite / MySQL</li>
+              <li class="chip">Flutter / Android</li><li class="chip">Swift / iOS</li>
+              <li class="chip">Git / GitHub</li>
+            </ul>
+
+            <p class="muted">
+              Nationality: Bangladeshi • Languages: English (Fluent), Dutch (Basic), Bengali (Native)
+            </p>
+
+            <p>
+              <a class="btn" href="docs/md-kaiser-aftab-cv.pdf" download>Download CV</a>
+              <a class="link" href="projects.html">View all projects →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      © <span id="year"></span> Md Kaiser Aftab
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
